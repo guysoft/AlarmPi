@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# ffmpeg
+# Provides ffmpeg in the os
+# Written by Guy Sheffer <guysoft at gmail dot com>
+# GPL V3
+########
+
+source /common.sh
+install_cleanup_trap
+
+apt-get update
+apt-get install -y python3-pip libav-tools libavcodec-extra python3-pyaudio git pulseaudio
+
+pushd /home/pi
+    sudo -u pi git clone https://github.com/guysoft/AlarmBot.git
+    
+    pushd AlarmBot/src
+        mv alarm.mp3 /boot
+        sudo -u pi ln -s /boot/alarm.mp3 alarm.mp3
+        
+        cp config.ini.example /boot/config.ini
+        sudo -u pi ln -s /boot/config.ini config.ini
+	echo "bur"
+	
+	# pip3 install https://github.com/guysoft/cron-descriptor/archive/fix_utf8.zip
+        pip3 install -r requirements.txt
+        
+        ./add_startup_service.sh pi
+    popd
+    
+popd
+
+
+
+# Unpack root at the end, so files are modified before
+unpack /filesystem/root /
