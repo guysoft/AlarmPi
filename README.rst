@@ -10,6 +10,11 @@ Where to get it?
 
 Official mirror is `here <http://unofficialpi.org/Distros/AlarmPi>`_
 
+How does it look?
+-----------------
+
+`Here is a blog post about this <https://guysoft.wordpress.com/alarmpi/>`_, with even more install and usage instructions.
+
 
 How to use it?
 --------------
