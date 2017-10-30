@@ -1,7 +1,7 @@
 AlarmPi
 =======
 
-A `Raspberry Pi <http://www.raspberrypi.org/>`_ distribution to to run `AlarmBot <https://github.com/guysoft/AlarmBot>`_ out of the box and the scripts necessary to load it at boot. This repository contains the source script to generate the distribution out of an existing `Raspbian <http://www.raspbian.org/>`_ distro image. `You can download a built image here <http://unofficialpi.org/Distros/AlarmPi>`_
+A `Raspberry Pi <http://www.raspberrypi.org/>`_ distribution to run `AlarmBot <https://github.com/guysoft/AlarmBot>`_ out of the box and the scripts necessary to load it at boot. This repository contains the source script to generate the distribution out of an existing `Raspbian <http://www.raspbian.org/>`_ distro image. `You can download a built image here <http://unofficialpi.org/Distros/AlarmPi>`_
 
 AlarmPi is based on `CustomPiOS <https://github.com/guysoft/CustomPiOS>`_
 
@@ -9,6 +9,11 @@ Where to get it?
 ----------------
 
 Official mirror is `here <http://unofficialpi.org/Distros/AlarmPi>`_
+
+How does it look?
+-----------------
+
+`Here is a blog post about this <https://guysoft.wordpress.com/alarmpi/>`_, with even more install and usage instructions.
 
 
 How to use it?
