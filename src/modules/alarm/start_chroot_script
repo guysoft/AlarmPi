@@ -9,10 +9,10 @@ source /common.sh
 install_cleanup_trap
 
 apt-get update
-apt-get install -y python3-pip libav-tools libavcodec-extra python3-pyaudio git pulseaudio 
+apt-get install -y python3 ffmpeg libavcodec-extra python3-pyaudio git pulseaudio
 
 pushd /home/pi
-    pip3 install pip==9.0.3
+    wget https://bootstrap.pypa.io/get-pip.py -O - | python3
     sudo -u pi git clone https://github.com/guysoft/AlarmBot.git
     
     pushd AlarmBot/src
