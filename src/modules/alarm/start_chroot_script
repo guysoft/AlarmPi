@@ -9,7 +9,7 @@ source /common.sh
 install_cleanup_trap
 
 apt-get update
-apt-get install -y python3 ffmpeg libavcodec-extra python3-pyaudio git pulseaudio
+apt-get install -y python3 python3-distutils python3-dev libffi-dev libssl-dev ffmpeg libavcodec-extra python3-pyaudio git pulseaudio
 
 pushd /home/pi
     wget https://bootstrap.pypa.io/get-pip.py -O - | python3
@@ -25,7 +25,7 @@ pushd /home/pi
 	# pip3 install https://github.com/guysoft/cron-descriptor/archive/fix_utf8.zip
         pip3 install -r requirements.txt
         
-        ./add_startup_service.sh pi
+        ./add_startup_service.sh pi || true
     popd
     
 popd
