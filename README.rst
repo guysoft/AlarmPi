@@ -35,7 +35,7 @@ Requirements
 Features
 --------
 
-* An IOT alarm that you can set and edit using Telegarm.
+* An IOT alarm that you can set and edit using Telegram.
 
 Developing
 ----------
